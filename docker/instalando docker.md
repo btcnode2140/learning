@@ -27,3 +27,7 @@ Una vez finalizado salimos del usuario root usando ```exit``` y reiniciamos.
 ### Hay que agregar el usuario al grupo docker
 
 ```sudo usermode -aG docker [user]```
+
+```newgrp docker```
+
+Ahora si ponemos el comando: ```groups``` deberiamos ver que pertenecemos al grupo docker.
