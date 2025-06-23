@@ -1,6 +1,6 @@
 # Estas Instrucciones fueron hechas sobre Debian 12
 
-### Hay que agregar mi usuario al grupo sudoers
+### Agregar mi usuario al grupo sudoers
 
 Nos logeamos como root usando ```su```
 
