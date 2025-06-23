@@ -1,1 +1,3 @@
-A donde esta el lugar al que todos llaman cielo, si nadie viene hasta aqui a cebarme unos amargos...
+En este documento voy a ir anotando mis avances en docker.
+
+**Abrazo**
