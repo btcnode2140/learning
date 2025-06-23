@@ -14,7 +14,7 @@ Una vez finalizado salimos del usuario root usando ```exit```
 
 Para forzar la actualizacion de la sesion actual usamos
 
-exec su - [user]
+```exec su - [user]```
 
 Esto reemplaza la sesion actual con una nueva cargando los nuevos permisos de grupo.
 
