@@ -31,3 +31,5 @@ Una vez finalizado salimos del usuario root usando ```exit``` y reiniciamos.
 ```newgrp docker```
 
 Ahora si ponemos el comando: ```groups``` deberiamos ver que pertenecemos al grupo docker.
+
+Tambien podemos verificarlo usando ```cat /etc/group | grep docker```
