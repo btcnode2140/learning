@@ -4,7 +4,7 @@ Nos logeamos como root usando ```su```
 
 ```sudo usermod -aG sudo [user]```
 
-Una vez finalizado salimos del usuario root usando ```exit```
+Una vez finalizado salimos del usuario root usando ```exit``` y reiniciamos.
 
 ---
 
