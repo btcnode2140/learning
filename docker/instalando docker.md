@@ -34,7 +34,7 @@ Esto reemplaza la sesion actual con una nueva cargando los nuevos permisos de gr
 
 ---
 
-### Hay que agregar el usuario al grupo docker
+### Agregar el usuario al grupo docker
 
 ```sudo usermode -aG docker [user]```
 
