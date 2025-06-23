@@ -1,3 +1,9 @@
+### Hay que agregar mi usuario al grupo sudoers
+
+```sudo usermod -aG sudo [user]```
+
+---
+
 ### Para instalar docker en debian 12 usamos:
 
 ```sudo apt install docker```
@@ -12,6 +18,6 @@
 
 ---
 
-### Hay que usar el usuario al grupo docker
+### Hay que agregar el usuario al grupo docker
 
 ```sudo usermode -aG docker [user]```
