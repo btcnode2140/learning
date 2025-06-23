@@ -6,7 +6,11 @@ Nos logeamos como root usando ```su```
 
 ```sudo usermod -aG sudo [user]```
 
-Una vez finalizado salimos del usuario root usando ```exit``` y reiniciamos.
+Luego para aplicar los cambios usamos
+
+```newgrp sudo```
+
+Una vez finalizado salimos del usuario root usando ```exit```
 
 ---
 
