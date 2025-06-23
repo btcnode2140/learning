@@ -1,3 +1,5 @@
+# Estas Instrucciones fueron hechas sobre Debian 12
+
 ### Hay que agregar mi usuario al grupo sudoers
 
 Nos logeamos como root usando ```su```
@@ -8,7 +10,7 @@ Una vez finalizado salimos del usuario root usando ```exit``` y reiniciamos.
 
 ---
 
-### Para instalar docker en debian 12 usamos:
+### Para instalar docker en usamos:
 
 ```sudo apt install docker```
 
