@@ -50,7 +50,7 @@
 
 ---
 
-## 3. Agregar tu usuario al grupo `docker`
+## 3. Agregar tu usuario (o el que necesites) al grupo `docker`
 
 1. Agrega tu usuario al grupo `docker`:
    ```sh
