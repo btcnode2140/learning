@@ -1,45 +1,80 @@
-# Estas Instrucciones fueron hechas sobre Debian 12
+# 🐧 Guía rápida: Instalación de Docker en Debian 12
 
-### Agregar mi usuario al grupo sudoers
-
-Nos logeamos como root usando ```su```
-
-```sudo usermod -aG sudo [user]```
-
-Luego para aplicar los cambios usamos
-
-```newgrp sudo```
-
-Una vez finalizado salimos del usuario root usando ```exit```
-
-Para forzar la actualizacion de la sesion actual usamos
-
-```exec su - [user]```
-
-Esto reemplaza la sesion actual con una nueva cargando los nuevos permisos de grupo.
+> **Nota:** Todos los comandos deben ejecutarse en una terminal.  
+> Reemplaza `[user]` por tu nombre de usuario.
 
 ---
 
-### Para instalar docker en usamos:
+## 1. Agregar tu usuario al grupo `sudo`
 
-```sudo apt install docker```
-
-### Para instalar docker compose
-
-```sudo apt install docker-compose```
-
-### Para instalar docker containerd
-
-```sudo apt install containerd```
+1. Inicia sesión como root:
+   ```sh
+   su
+   ```
+2. Agrega tu usuario al grupo `sudo`:
+   ```sh
+   usermod -aG sudo [user]
+   ```
+3. Aplica los cambios de grupo:
+   ```sh
+   newgrp sudo
+   ```
+4. Sal del usuario root:
+   ```sh
+   exit
+   ```
+5. Refresca la sesión para cargar los nuevos permisos:
+   ```sh
+   exec su - [user]
+   ```
+   > Esto reemplaza la sesión actual con una nueva, cargando los permisos de grupo.
 
 ---
 
-### Agregar el usuario al grupo docker
+## 2. Instalación de Docker y herramientas relacionadas
 
-```sudo usermode -aG docker [user]```
+- **Docker:**
+  ```sh
+  sudo apt install docker
+  ```
 
-```newgrp docker```
+- **Docker Compose:**
+  ```sh
+  sudo apt install docker-compose
+  ```
 
-Ahora si ponemos el comando: ```groups``` deberiamos ver que pertenecemos al grupo docker.
+- **Containerd:**
+  ```sh
+  sudo apt install containerd
+  ```
 
-Tambien podemos verificarlo usando ```cat /etc/group | grep docker```
+---
+
+## 3. Agregar tu usuario al grupo `docker`
+
+1. Agrega tu usuario al grupo `docker`:
+   ```sh
+   sudo usermod -aG docker [user]
+   ```
+2. Aplica los cambios de grupo:
+   ```sh
+   newgrp docker
+   ```
+
+---
+
+## 4. Verificación
+
+- Comprueba que perteneces al grupo `docker`:
+  ```sh
+  groups
+  ```
+- O verifica directamente en el archivo de grupos:
+  ```sh
+  cat /etc/group | grep docker
+  ```
+
+---
+
+> **¡Listo!** Ya puedes usar Docker sin necesidad de `sudo` en cada comando.
+
