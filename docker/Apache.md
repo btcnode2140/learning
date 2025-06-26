@@ -10,13 +10,10 @@
 
 con d mayuscula
 
-### Creamos el Dockerfile (sirve para crear la imagen de docker)
-
-### Creamos index.html
-
-### Copiamos el index.html
-
-### Buildeamos la imagen de docker
+- Creamos el Dockerfile (sirve para crear la imagen de docker)
+- Creamos index.html
+- Copiamos el index.html
+- Buildeamos la imagen de docker
 
 ```docker build -t apache .```
 
